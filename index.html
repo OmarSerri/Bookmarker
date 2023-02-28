@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-light">
+    <div class="title d-flex justify-content-center p-5">
+        <h1 class="fw-bolder">Bookmarker</h1>
+    </div>
+    <div class="container">
+        <h2 class="mb-5 text-center">Bookmark your Favourite Websites</h2>
+        <label class="mb-1 fw-bold" for="websiteNameInput">Website Name :</label>
+        <input class="form-control mb-4" oninput="nameValidation()" type="text" id="websiteNameInput">
+        <label class="mb-1 fw-bold" for="websiteUrlInput">Website URL :</label>
+        <input class="form-control mb-3" oninput="urlValidation()" type="text" id="websiteUrlInput">
+        <div class="btn d-flex justify-content-center">
+            <button onclick="submit()" class="btn btn-lg btn-outline-secondary">Submit</button>
+        </div>
+    </div>
+    <div class="container mt-5 d-flex justify-content-center">
+        <table class="table w-75 bg-white">
+            <thead class="text-center">
+                <th>index</th>
+                <th>Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody class="text-center" id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
